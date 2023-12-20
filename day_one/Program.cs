@@ -1,6 +1,4 @@
-﻿//couldn't solve it but I didn't know what regex was
-
-
+﻿//still trying to solve part 2 this shi hard
 
 using System;
 using System.Text.RegularExpressions;

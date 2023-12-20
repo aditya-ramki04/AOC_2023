@@ -1,4 +1,8 @@
-﻿using System;
+﻿//couldn't solve it but I didn't know what regex was
+
+
+
+using System;
 using System.Text.RegularExpressions;
 using System.Text;
 

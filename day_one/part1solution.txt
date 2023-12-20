@@ -1,0 +1,30 @@
+List<string> input = new List<string>(File.ReadAllLines("./input.txt")); //read all lines from txt file
+List<string> answerList = new List<string>();
+
+foreach (string word in input)
+{
+string answer = "";
+
+foreach (char character in word)
+{
+    if (Char.IsDigit(character))
+    {
+        answer += character;
+        break;
+    }
+}
+
+for (int i = word.Length - 1; i >= 0; i--)
+{
+    if (Char.IsDigit(word[i]))
+    {
+        answer += word[i];
+        break;
+    }
+}
+
+answerList.Add(answer);
+}
+
+int total = answerList.Sum(x => Int32.Parse(x));
+Console.WriteLine(total);
